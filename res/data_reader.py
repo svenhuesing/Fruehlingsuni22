@@ -108,12 +108,12 @@ class Steuerung:
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
                     df = pd.read('res/Sensor1.csv', sep = ';')
-                    self.data = self.datatype_correction_csv(df)
+                    self.data = self.datatype_correction(df)
                 elif(wahl == 'Box2'):
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
                     df = pd.read('res/Sensor2.csv', sep = ';')
-                    self.data = self.datatype_correction_csv(df)
+                    self.data = self.datatype_correction(df)
                 else:
                     clear_output(wait=True)
                     print("Fehlerhafte Eingabe")
