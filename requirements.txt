@@ -6,8 +6,4 @@ jupyter_contrib_nbextensions
 ipyleaflet
 ipywidgets
 time
-chart_studio
-cufflinks
-ast
-io
 
