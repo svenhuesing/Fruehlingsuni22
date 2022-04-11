@@ -3,10 +3,12 @@ numpy
 plotly
 datetime
 jupyter_contrib_nbextensions
+ipyleaflet
+ipywidgets
+cufflinks
+chart_studio
 requests
 time
-chart_studio
-cufflinks
 ast
 io
 
