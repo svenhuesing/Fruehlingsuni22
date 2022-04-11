@@ -107,12 +107,12 @@ class Steuerung:
                 if(wahl == 'Box1'):
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
-                    df = pd.read('res/Sensor1.csv', sep = ';')
+                    df = pd.read_csv('res/Sensor1.csv', sep = ';')
                     self.data = self.datatype_correction_csv(df)
                 elif(wahl == 'Box2'):
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
-                    df = pd.read('res/Sensor2.csv', sep = ';')
+                    df = pd.read_csv('res/Sensor2.csv', sep = ';')
                     self.data = self.datatype_correction_csv(df)
                 else:
                     clear_output(wait=True)

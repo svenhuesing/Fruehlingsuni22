@@ -7,5 +7,7 @@ ipyleaflet
 ipywidgets
 cufflinks
 chart_studio
-
+requests
+time
+ast
 
