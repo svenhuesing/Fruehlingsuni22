@@ -2,5 +2,11 @@ pandas
 numpy
 plotly
 datetime
-
+jupyter_contrib_nbextensions
+requests
+time
+chart_studio
+cufflinks
+ast
+io
 
