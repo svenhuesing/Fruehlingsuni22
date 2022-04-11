@@ -108,12 +108,12 @@ class Steuerung:
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
                     df = pd.read_csv('res/Sensor1.csv', sep = ';')
-                    self.data = self.datatype_correction(df)
+                    self.data = self.datatype_correction_csv(df)
                 elif(wahl == 'Box2'):
                     clear_output(wait=True)
                     display(VBox([self.auswahl, self.loadButton]))
                     df = pd.read_csv('res/Sensor2.csv', sep = ';')
-                    self.data = self.datatype_correction(df)
+                    self.data = self.datatype_correction_csv(df)
                 else:
                     clear_output(wait=True)
                     print("Fehlerhafte Eingabe")
@@ -166,9 +166,7 @@ class Steuerung:
         return df
 
     def datatype_correction_csv(self, df):
-        df['value_temp'] = pd.to_numeric(df['value_temp'], errors='coerce')
-        df['value_pm'] = pd.to_numeric(df['value_pm'], errors='coerce')
-        df['value_hum'] = pd.to_numeric(df['value_hum'], errors='coerce')
+        df['value'] = pd.to_numeric(df['value'], errors='coerce')
         if df.index.name != 'createdAt':
             df['createdAt'] = pd.to_datetime(df['createdAt'], dayfirst=True,errors='coerce')
             df['createdAt'] = df['createdAt'] + timedelta(hours=2)
