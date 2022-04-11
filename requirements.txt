@@ -2,13 +2,5 @@ pandas
 numpy
 plotly
 datetime
-jupyter_contrib_nbextensions
-ipyleaflet
-ipywidgets
-requests
-time
-chart_studio
-cufflinks
-ast
-io
+
 
